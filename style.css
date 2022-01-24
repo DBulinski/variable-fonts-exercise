@@ -1,12 +1,16 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+:root {
   --color-gray-100: hsl(270deg 25% 96%);
   --color-gray-300: hsl(270deg 17% 84%);
   --color-gray-500: hsl(270deg 17% 72%);
   --color-gray-700: hsl(270deg 12% 58%);
   --color-gray-900: hsl(270deg 22% 12%);
   --color-gray-1000: hsl(270deg 20% 8%);
+  --white: white;
 }
 
 html,
@@ -33,6 +37,34 @@ footer {
   justify-content: space-between;
   max-width: calc(1200 / 16 * 1rem);
   margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+footer .logo {
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+footer .sublogo {
+  color: var(--color-gray-500);
+  font-style: italic;
+}
+
+footer .person-name {
+  color: var(--white);
+}
+
+footer .links h2 {
+  color: var(--color-gray-700);
+  font-size: 1rem;
+}
+
+footer .links a {
+  color: var(--color-gray-100);
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .meta {
